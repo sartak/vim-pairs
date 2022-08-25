@@ -30,7 +30,7 @@ let s:savecpo   = &cpoptions
 let s:savemagic = &magic
 set cpoptions&vim magic
 
-for p in ['!','$','%','^','&','*','_','-','+','=',':',';','@','~','#','<bar>','<bslash>',',','.','?','/']
+for p in ['!','$','%','^','&','*','_','-','+','=',':',';','@','~','#','<bar>','<bslash>','.','?','/']
    execute 'onoremap <silent> i'.p." :<c-u>call pairs#process('".p."'".", 'i')<cr>"
    execute 'onoremap <silent> a'.p." :<c-u>call pairs#process('".p."'".", 'a')<cr>"
    execute 'xnoremap <silent> i'.p." :<c-u>call pairs#process('".p."'".", 'i')<cr>"
