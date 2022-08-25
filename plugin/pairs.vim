@@ -51,10 +51,6 @@ onoremap <silent> <plug>PunctPairsIAll :<c-u>call pairs#process('-`!"$%^&*_+=:;@
 onoremap <silent> <plug>PunctPairsAAll :<c-u>call pairs#process('-`!"$%^&*_+=:;@~#<bar><bslash>,.?/'."'", 'a')<cr>
 xnoremap <silent> <plug>PunctPairsIAll :<c-u>call pairs#process('-`!"$%^&*_+=:;@~#<bar><bslash>,.?/'."'", 'i')<cr>
 xnoremap <silent> <plug>PunctPairsAAll :<c-u>call pairs#process('-`!"$%^&*_+=:;@~#<bar><bslash>,.?/'."'", 'a')<cr>
-omap     <silent> i<space>             <plug>PunctPairsIAll
-omap     <silent> a<space>             <plug>PunctPairsAAll
-xmap     <silent> i<space>             <plug>PunctPairsIAll
-xmap     <silent> a<space>             <plug>PunctPairsAAll
 
 nnoremap <silent> <plug>PunctPairsQuotes :normal ciq<cr>
 nmap     <silent> ""                     <plug>PunctPairsQuotesa
